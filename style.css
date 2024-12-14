@@ -1,0 +1,161 @@
+body {
+    background-color: #000;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF;
+}
+
+.container {
+    border: 3px dashed #800080;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.section-title {
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid #ff69b4;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.content {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+a {
+    color: #ff4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skills .skill {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #FF00FF;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skills .skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #FF00FF;
+    cursor: pointer;
+}
+
+/* Neon Text Effect */
+.neon-text {
+    color: #0ff;
+    text-shadow: 0 0 5px rgb(255, 166, 0), 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px rgb(175, 44, 127);
+    animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+    }
+
+    to {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 120px #0ff;
+    }
+}
+
+/* Retro GIF Animation */
+.retro-gif {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #18dce0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #c1d110;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero {
+    text-align: center;
+    margin: 50px 0;
+    color: #FFFF00;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #FF0000;
+    }
+
+    50% {
+        color: #00FF00;
+    }
+
+    100% {
+        color: #FFFF00;
+    }
+}
+
+.section {
+    padding: 30px;
+    text-align: center;
+}
+
+.projects {
+    text-align: center;
+    margin: 30px;
+}
+
+.contact {
+    padding: 30px;
+    text-align: center;
+    background-color: #222;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #FFF;
+}
+
+
+/* Importing a retro pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.retro-font {
+    font-family: 'Press Start 2P', cursive;
+    /* Applying the retro font */
+    font-size: 18px;
+    /* Adjust size as needed */
+    color: #00FF00;
+    /* Optional color to match retro theme */
+    letter-spacing: 2px;
+    /* Spacing between letters for a more retro feel */
+}
